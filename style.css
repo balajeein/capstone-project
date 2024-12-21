@@ -1,0 +1,283 @@
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: white;
+     color: black;
+     overflow-x: hidden;
+ }
+ 
+ .container {
+     max-width: 1344px;
+     margin: 0 auto;
+     padding: 0 24px;
+     width: 100%;
+ }
+ 
+ header {
+     border-bottom: 2px solid #dedede;
+ }
+ 
+ header .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 80px;
+ }
+ 
+ header .logo {
+     font-family: 'Playball', cursive;
+     font-size: 42px;
+     font-weight: 400;
+     line-height: 42px;
+     color: black;
+ }
+ 
+ header nav ul {
+     display: flex;
+     gap: 20px;
+     list-style: none;
+ }
+ 
+ header nav ul li a {
+     font-family: 'Lexend Exa', sans-serif;
+     font-size: 28px;
+     font-weight: 300;
+     line-height: 32px;
+     color: black;
+     cursor: pointer;
+     text-decoration: none;
+ }
+ 
+ .home {
+     text-align: center;
+     padding: 50px 0;
+ }
+ 
+ .home h1 {
+     font-family: 'Lexend Exa', sans-serif;
+     font-size: 120px;
+     font-weight: 300;
+     line-height: 120px;
+     letter-spacing: -0.02em;
+     margin-bottom: 50px;
+ }
+ 
+ .home-image {
+     max-width: 100%;
+     margin: 0 auto;
+ }
+ 
+ .home-image img {
+     width: 100%;
+     height: auto;
+     max-height: 600px;
+     object-fit: cover;
+ }
+ 
+ .projects-container {
+     margin: 50px 0;
+ }
+ 
+ .projects {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 24px;
+     margin-bottom: 50px;
+ }
+ 
+ .project {
+     width: 100%;
+ }
+ 
+ .project img {
+     width: 100%;
+     height: 333px;
+     object-fit: cover;
+     transition: transform 0.3s ease;
+ }
+ 
+ .project:hover img {
+     transform: scale(1.02);
+ }
+ 
+ .project-text {
+     margin-top: 8px;
+ }
+ 
+ .project-text .first-line {
+     font-family: 'Newsreader', serif;
+     font-size: 17px;
+     font-weight: 400;
+     margin: 0;
+ }
+ 
+ .project-text .second-line {
+     font-family: 'Newsreader', serif;
+     font-size: 17px;
+     font-weight: 400;
+     color: rgb(107, 109, 111);
+     margin: 0;
+ }
+ 
+ .about {
+     text-align: right;
+     padding: 50px 0;
+ }
+ 
+ .about-content {
+     margin-top: 50px;
+     max-width: 648px;
+     margin-left: auto;
+ }
+ 
+ .about-content p {
+     font-family: 'Newsreader', serif;
+     font-size: 24px;
+     font-weight: 500;
+     line-height: 32px;
+     letter-spacing: -0.005em;
+ }
+ 
+ .paragraph {
+     text-align: center;
+     padding: 50px 0;
+     margin-top: 100px;
+ }
+ 
+ .paragraph p {
+     font-family: 'Lexend Exa', sans-serif;
+     font-size: 48px;
+     font-weight: 100;
+     line-height: 52px;
+     letter-spacing: -1.5px;
+     max-width: 900px;
+     margin: 0 auto;
+ }
+ 
+ .contacts {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding: 50px 0;
+ }
+ 
+ .contact {
+     width: 30%;
+ }
+ 
+ .contact p {
+     font-family: 'Lexend Exa', sans-serif;
+     font-size: 28px;
+     font-weight: 300;
+     line-height: 32px;
+     letter-spacing: .06em;
+ }
+ 
+ .con-dec {
+     width: 65%;
+ }
+ 
+ .con-dec p {
+     font-family: 'Newsreader', serif;
+     font-size: 17px;
+     font-weight: 400;
+     line-height: 28px;
+ }
+ 
+ .footer {
+     margin-top: 100px;
+     padding: 96px 0 24px;
+
+ }
+ 
+ .footer-div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .footer-div p {
+     font-family: 'Lexend Exa', sans-serif;
+     font-size: 28px;
+     font-weight: 300;
+     line-height: 32px;
+     color: #606060;
+     letter-spacing: -0.01em;
+ }
+ 
+ .footer-div button {
+     font-family: 'Lexend Exa', sans-serif;
+     font-size: 20px;
+     font-weight: 400;
+     line-height: 24px;
+     padding: 12px 24px;
+     border-radius: 8px;
+     border: 2px solid #00000049;
+     background-color: transparent;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ 
+ .footer-div button:hover {
+     background-color: #000;
+     color: #fff;
+ }
+ 
+ @media (max-width: 1200px) {
+     .home h1 {
+         font-size: 80px;
+         line-height: 90px;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     header nav {
+         display: none;
+     }
+ 
+     .home h1 {
+         font-size: 48px;
+         line-height: 56px;
+     }
+ 
+     .projects {
+         grid-template-columns: 1fr;
+     }
+ 
+     .project img {
+         height: 250px;
+     }
+ 
+     .contacts {
+         flex-direction: column;
+     }
+ 
+     .contact, .con-dec {
+         width: 100%;
+         margin-bottom: 24px;
+     }
+ 
+     .paragraph p {
+         font-size: 32px;
+         line-height: 40px;
+     }
+ 
+     .about-content {
+         max-width: 100%;
+     }
+ }
+
+ a:hover{
+    background-color: #606060;
+    padding: 3px 8px;
+    color:#dcdcdc;
+    transition: 0.35s ease;
+    border-radius: 5px;
+ }
